@@ -1,0 +1,25 @@
+'''
+2) Escreva um programa que verifique, em uma string, a existência da letra ‘a’, 
+seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela 
+ocorre.
+
+IMPORTANTE: Essa string pode ser informada através de qualquer entrada de sua 
+preferência ou pode ser previamente definida no código;
+
+'''
+
+def verifica_string():
+    word = input('Digite uma palavra ').lower()
+    cont = 0
+    for letra in word:
+        if letra == 'a':
+            cont += 1
+            
+    if cont == 0:
+        print('Não foi encontrada a letra A na palavra digitada')
+    elif cont == 1:
+        print(f'Foi encontrada 1 letra A na palavra digitada')
+    else:
+        print(f'Foram encontradas {cont} letras A na palavra digitada')
+    
+verifica_string()
